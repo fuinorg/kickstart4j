@@ -1,0 +1,93 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.fuin</groupId>
+        <artifactId>pom</artifactId>
+        <version>1.0.5</version>
+    </parent>
+
+    <artifactId>kickstart4j</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0.0</version>
+    <name>Kickstart4J</name>
+    <description>A Java Webstart based Installer and Updater.</description>
+    <url>http://www.fuin.org/kickstart4j/</url>
+
+	<scm>
+		<url>https://github.com/fuinorg/kickstart4j/</url>
+		<connection>scm:git:git://github.com/fuinorg/kickstart4j.git</connection>
+		<developerConnection>scm:git:git@github.com:fuinorg/kickstart4j.git</developerConnection>
+	</scm>
+
+    <issueManagement>
+    	<system>GitHub Issues</system>
+    	<url>https://github.com/fuinorg/kickstart4j/issues</url>
+    </issueManagement>
+
+
+    <dependencies>
+
+        <!-- Compile -->
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-exec</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.fuin</groupId>
+            <artifactId>utils4j</artifactId>
+            <version>0.6.9</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.fuin</groupId>
+            <artifactId>utils4swing</artifactId>
+            <version>0.9.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.9</version>
+        </dependency>       
+
+        <!-- Test -->
+        
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>5.11</version>
+			<scope>test</scope>
+			<classifier>jdk14</classifier>
+		</dependency>
+        
+    </dependencies>
+
+    <build>
+        <plugins>
+        
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+                <configuration>
+                    <source>1.4</source>
+                    <target>1.4</target>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>

@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Kickstart4J TestSuite" annotations="javadoc"> 
+  <test name="org.fuin.kickstart4j">
+    <packages>
+      <package name="org.fuin.kickstart4j"/>
+    </packages>
+  </test>
+</suite>
